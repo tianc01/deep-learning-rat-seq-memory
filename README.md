@@ -4,7 +4,7 @@ This repository implements a CNN model in decoding neural activities for a seque
 
 ### Instructions for Set Up ###
 
-* Download SuperChris_WellTrainedSession.mat in the shared link and save it as `data/SuperChris_WellTrainedSession.mat`. This .mat file contains a table with each row representing every 0.001 second recording time (50 minutes in total).
+* Download the .mat file which contains a table with each row representing every 0.001 second recording time (50 minutes in total).
 
 * Run `to_sql_all_tetrodes_superchris_session1.py`, which writes all the data in `SuperChris_WellTrainedSession.mat` to a SQlite database table.
 
