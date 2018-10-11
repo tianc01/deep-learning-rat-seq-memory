@@ -1,40 +1,10 @@
 # README #
 
-This repository implements an LeNet (CNN) model in decoding neural activities for a sequence memory task.
+This repository implements a CNN model in decoding neural activities for a sequence memory task.
 
-### How to get set up? ###
+### Instructions for Set Up ###
 
-* Download SuperChris_WellTrainedSession.mat in the shared link and save it as `data/SuperChris_WellTrainedSession.mat`. 
-
-    This .mat file contains a table with each row representing every 0.001 second recording time (50 minutes in total). Below is table column information:
-
-    **Timestamps**: the upper limit of their associated timestamp (bin), i.e. each row contains values associated measurements/events occuring between the previous and current row's timestamp value.
-    
-	**T?_LFP_Raw**: Raw LFP trace (in voltage)
-	
-	**T?_LFP_Raw_HilbVals**: Hilbert transformed LFP (phase measurements (range +/- pi))
-	
-	**T?_LFP_Theta**: The Theta filtered LFP (in voltage)
-	
-	**T?_LFP_Theta_HilbVals**: Hilbert transformed Theta LFP (phase measurements (range +/- pi))
-	
-	**T?_LFP_Beta**: Beta filtered LFP (in voltage)
-	
-	**T?_LFP_Beta_HilbVals**: Hilbert transformed Beta LFP (phase measurements (range +/- pi))
-	
-	**T?-U?**: binary (0 or 1) indicators of whether there was a spike in that time bin or not for unit? of tetrode?
-	
-	**Odor?**: (1 or 0) trial odor was presented or not
-	
-	**Position?**: (1 or 0) position indicator
-	
-	**InSeqLog**: 1 for InSeq trial, 0 for the rest (nontrials and OutSeq)
-	
-	**PerformanceLog**: 1(correct), -1(incorrect), 0(null event)
-	
-	**PokeEvents**: 1(rat initialy enters the port), -1(rat withdraws from the port), 0(null event)
-	
-	**XvalRatMazePosition/YvalRatMazePosition**: a position value (probably in pixel) or a NaN (position was recorded every 15ms on average, many unrecorded rows)
+* Download SuperChris_WellTrainedSession.mat in the shared link and save it as `data/SuperChris_WellTrainedSession.mat`. This .mat file contains a table with each row representing every 0.001 second recording time (50 minutes in total).
 
 * Run `to_sql_all_tetrodes_superchris_session1.py`, which writes all the data in `SuperChris_WellTrainedSession.mat` to a SQlite database table.
 
