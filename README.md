@@ -2,7 +2,7 @@
 
 This repository implements a CNN model in decoding neural activities for a sequence memory task.
 
-### Instructions for Set Up ###
+### Instructions ###
 
 * Download the .mat file which contains a table with each row representing every 0.001 second recording time (50 minutes in total).
 
@@ -16,6 +16,9 @@ This repository implements a CNN model in decoding neural activities for a seque
     * Plot prediction results
     
 	You can modify `dd = DecodeData('data/*.json')` at the end of the file in `if __name__ == "__main__":`. If implementing CNN model, use 'data/superchris_session1_cnn.json'. If implementing logistic regression, use 'data/superchris_session1_lr.json'.
+	
+### Examples ###
+![An example for predicting memory replay](https://github.com/tianc01/deep-learning-rat-seq-memory/blob/master/fig/prediction.png)
 
 ### Files ###
 
