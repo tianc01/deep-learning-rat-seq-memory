@@ -18,6 +18,7 @@ This repository implements a CNN model in decoding neural activities for a seque
 	You can modify `dd = DecodeData('data/*.json')` at the end of the file in `if __name__ == "__main__":`. If implementing CNN model, use 'data/superchris_session1_cnn.json'. If implementing logistic regression, use 'data/superchris_session1_lr.json'.
 	
 ### Examples ###
+An example for predicting memory replay
 ![An example for predicting memory replay](https://github.com/tianc01/deep-learning-rat-seq-memory/blob/master/fig/prediction.png)
 
 ### Files ###
